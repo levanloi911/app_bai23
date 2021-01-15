@@ -1,5 +1,5 @@
 import 'package:app_bai2/Coler.dart';
-import 'package:app_bai2/update_word.dart';
+import 'package:app_bai2/update_password.dart';
 import 'package:flutter/material.dart';
 
 import 'Login.dart';

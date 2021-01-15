@@ -25,12 +25,8 @@ class _calenda_learingState extends State<calenda_learing> {
   CalendarController _controller;
 
   @override
-  void initState() {
-    super.initState();
-    _controller = CalendarController();
-  }
-  @override
   Widget build(BuildContext context) {
+    _controller = CalendarController();
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -121,19 +117,7 @@ class _calenda_learingState extends State<calenda_learing> {
                 ),
                 calendarController: _controller,
               ),
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.center,
-              //   crossAxisAlignment: CrossAxisAlignment.center,
-              //   children: [
-              //     chage_calenda("7"),
-              //     chage_calenda("8"),
-              //     chage_calenda("9"),
-              //     chage_calenda("10"),
-              //     chage_calenda("11"),
-              //     chage_calenda("12"),
-              //     chage_calenda("13"),
-              //   ],
-              // ),
+
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -237,22 +221,7 @@ class _calenda_learingState extends State<calenda_learing> {
     );
   }
 
-  Container chage_calenda(String s) {
-    return Container(
-      margin: EdgeInsets.only(left: 5, right: 5),
-      width: MediaQuery.of(context).size.width * 0.1,
-      height: MediaQuery.of(context).size.height * 0.06,
-      decoration: BoxDecoration(
-          color: Color(0xFFFCE4EC), borderRadius: BorderRadius.circular(10)),
-      child: Center(
-        child: Text(
-          "$s",
-          style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
-          textAlign: TextAlign.center,
-        ),
-      ),
-    );
-  }
+
 
   Container calenda_learing_hoa(
       String icon,
